@@ -1,0 +1,188 @@
+body{
+    margin:0px;
+    background-color: black;
+}
+
+body #btn{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+body #btn #space{
+    width: 37px;
+    height: 15px;
+    border-radius: 10px;
+    margin: 5%;
+    padding: 2px;
+    background-color: rgba(127, 140, 69, 0.78);
+    box-shadow: 0px 0px 15px rgb(109, 34, 34);
+}
+
+body #btn #space #slide{
+    position: relative;
+    width: 40%;
+    height: inherit;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+}
+
+body #calc {
+    height: 400px;
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -125px;
+    background-color: rgba(127, 140, 69, 0.78);
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgb(109, 34, 34);
+}
+
+body #calc #screen{
+    width: 80%;
+    height: 20%;
+    /*background-color: rgb(120, 204, 207);*/
+    background-color: rgba(0,0,0,0.7);
+    margin: 10%;
+}
+
+body #calc #screen #input{
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+body #calc #board{
+    box-sizing: border-box;
+    width: 80%;
+    height: 60%;
+  /*  background-color: rgb(51, 155, 146);*/
+    background-color: rgb(40, 53, 52);
+    margin: 10%;
+    padding: 2%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    text-align: center;
+    grid-gap: 10px;
+}
+
+body #calc #board .btn-op{
+    box-shadow: 0px 0px 5px black;
+    color: rgb(109, 34, 34);
+    font-weight: 700;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    align-items: center;
+    border-radius: 5px;
+}
+
+body #calc #board .btn-op:hover{
+    font-weight: 900;
+    color: black;
+}
+
+body #calc #board .btn-opr{
+    box-shadow: 0px 0px 5px black;
+    color: gray;
+    font-weight: 700;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(109, 34, 34);
+    align-items: center;
+    border-radius: 5px;
+}
+
+body #calc #board .btn-opr:hover{
+    font-weight: 900;
+    color: black;
+}
+
+/*defining the position of operands and operator in grid*/
+body #calc #board #clear{
+    grid-area: 1/1/2/2;
+}
+
+body #calc #board #sign{
+    grid-area: 1/2/2/3;
+}
+
+body #calc #board #equal{
+    grid-area: 1/3/2/4;
+}
+
+body #calc #board #one{
+    grid-area: 2/1/3/2;
+}
+
+body #calc #board #two{
+    grid-area: 2/2/3/3;
+}
+
+body #calc #board #three{
+    grid-area: 2/3/3/4;
+}
+
+body #calc #board #four{
+    grid-area: 3/1/4/2;
+}
+
+body #calc #board #five{
+    grid-area: 3/2/4/3;
+}
+
+body #calc #board #six{
+    grid-area: 3/3/4/4;
+}
+
+body #calc #board #seven{
+    grid-area: 4/1/5/2;
+}
+
+body #calc #board #eight{
+    grid-area: 4/2/5/3;
+}
+
+body #calc #board #nine{
+    grid-area: 4/3/5/4;
+}
+
+body #calc #board #zero{
+    grid-area: 5/1/6/3;
+}
+
+body #calc #board #dot{
+    grid-area: 5/3/6/4;
+}
+
+body #calc #board #mod{
+    grid-area: 1/4/2/5;
+}
+
+body #calc #board #plus{
+    grid-area: 2/4/3/5;
+}
+
+body #calc #board #minus{
+    grid-area: 3/4/4/5;
+}
+
+body #calc #board #mul{
+    grid-area: 4/4/5/5;
+}
+
+body #calc #board #div{
+    grid-area: 5/4/6/5;
+}
