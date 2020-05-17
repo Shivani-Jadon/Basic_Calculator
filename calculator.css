@@ -50,13 +50,18 @@ body #calc #screen{
 }
 
 body #calc #screen #input{
-    width: inherit;
-    height: inherit;
-    padding: 10px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    /* justify-content: flex-end; */
     font-weight: bold;
     color: rgba(255, 255, 255, 0.5);
+    overflow-x: scroll;
+    padding-top: 40px;
+    margin: auto 10px;
+}
+
+body #calc #screen #input::-webkit-scrollbar{
+    display: hidden;
 }
 
 body #calc #board{
