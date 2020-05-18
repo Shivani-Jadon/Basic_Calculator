@@ -61,7 +61,7 @@ body #calc #screen #input{
 }
 
 body #calc #screen #input::-webkit-scrollbar{
-    display: hidden;
+    display: none;
 }
 
 body #calc #board{
